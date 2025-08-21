@@ -1,2 +1,10 @@
+# Explicitly mark MATLAB-related files
 *.m linguist-language=Matlab
-*.html linguist-detectable=false
+*.slx linguist-language=Matlab
+
+# Ignore everything else in language stats
+* linguist-detectable=false
+
+# Re-enable detection only for .m and .slx files
+*.m linguist-detectable=true
+*.slx linguist-detectable=true
